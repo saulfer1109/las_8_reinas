@@ -12,7 +12,8 @@ function agregarReina(celda) {
     // Si ya hay una reina, eliminarla
     reinaExistente.remove();
     reinasColocadas--;
-    actualizarReinasRestantes();
+    document.getElementById("reinasColocadas").textContent = "Reinas colocadas: " + reinasColocadas;
+    changeQueens();
   } else {
     if (hayReinaEnFilaColumnaDiagonal(fila, columna)) {
       alert("No se puede agregar otra reina en contacto con otra reina.");
@@ -27,8 +28,9 @@ function agregarReina(celda) {
         // Agregar la imagen a la celda
         celda.appendChild(img);
         reinasColocadas++;
+        document.getElementById("reinasColocadas").textContent = "Reinas colocadas: " + reinasColocadas;
         // Actualizar el número de reinas restantes
-        actualizarReinasRestantes();
+        changeQueens();
       } else {
         alert("Ya se colocaron las 8 reinas.");
       }
@@ -73,9 +75,9 @@ function hayReinaEnFilaColumnaDiagonal(fila, columna) {
   return false;
 }
 
-function actualizarReinasRestantes() {
-  var reinasRestantes = 8 - reinasColocadas;
-  document.getElementById("reinasRestantes").textContent = "Reinas restantes: " + reinasRestantes;
+function changeQueens() {
+  var reinasFaltantes = 8 - reinasColocadas;
+  document.getElementById("reinasFaltantes").textContent = "Reinas restantes: " + reinasFaltantes;
 }
 
 function resetearTablero() {
@@ -92,5 +94,5 @@ function resetearTablero() {
     }
   }
   reinasColocadas = 0;
-  actualizarReinasRestantes();
+  changeQueens();
 }
