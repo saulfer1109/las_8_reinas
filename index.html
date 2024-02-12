@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Las 8 reinas</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <script src='js/main.js'></script>
+</head>
+
+<body>
+    <h1>Ocho Reinas</h1>
+    <div>
+        <select id="selectorImagen">
+            <option value="images/Reina.png">Reina 1</option>
+            <option value="images/ricardo.png">Reina 2</option>
+            <option value="images/ricardo1.jpg">Reina 3</option>
+            <option value="images/ricardo2.jpg">Reina 4</option>
+            <option value="images/ricardo3.jpg">Reina 5</option>
+            <option value="images/ricardo4.jpg">Reina 6</option>
+            <option value="images/ricardo5.jpg">Reina 7</option>
+            <option value="images/ricardo6.jpg">Reina 8</option>
+            <option value="images/ricardo7.jpg">Reina 9</option>
+            <option value="images/ricardo8.jpg">Reina 10</option>
+            <option value="images/ricardo9.jpg">Reina 11</option>
+            <option value="images/ricardo10.jpg">Reina 12</option>
+            
+        </select>
+        <button onclick="agregarReina()">Agregar Reina</button>
+    </div>
+    <table id="tablero" class="center">
+        <tr>
+            <td onclick="agregarReina(this)"></td>
+            <td onclick="agregarReina(this)"></td>
+            <td onclick="agregarReina(this)"></td>
+            <td onclick="agregarReina(this)"></td>
+            <td onclick="agregarReina(this)"></td>
+            <td onclick="agregarReina(this)"></td>
+            <td onclick="agregarReina(this)"></td>
+            <td onclick="agregarReina(this)"></td>
+        </tr>
+        <tr>
+            <td onclick="agregarReina(this)"></td>
+            <td onclick="agregarReina(this)"></td>
+            <td onclick="agregarReina(this)"></td>
+            <td onclick="agregarReina(this)"></td>
+            <td onclick="agregarReina(this)"></td>
+            <td onclick="agregarReina(this)"></td>
+            <td onclick="agregarReina(this)"></td>
+            <td onclick="agregarReina(this)"></td>
+        </tr>
+        <tr>
+            <td onclick="agregarReina(this)"></td>
+            <td onclick="agregarReina(this)"></td>
+            <td onclick="agregarReina(this)"></td>
+            <td onclick="agregarReina(this)"></td>
+            <td onclick="agregarReina(this)"></td>
+            <td onclick="agregarReina(this)"></td>
+            <td onclick="agregarReina(this)"></td>
+            <td onclick="agregarReina(this)"></td>
+        </tr>
+        <tr>
+            <td onclick="agregarReina(this)"></td>
+            <td onclick="agregarReina(this)"></td>
+            <td onclick="agregarReina(this)"></td>
+            <td onclick="agregarReina(this)"></td>
+            <td onclick="agregarReina(this)"></td>
+            <td onclick="agregarReina(this)"></td>
+            <td onclick="agregarReina(this)"></td>
+            <td onclick="agregarReina(this)"></td>
+        </tr>
+        <tr>
+            <td onclick="agregarReina(this)"></td>
+            <td onclick="agregarReina(this)"></td>
+            <td onclick="agregarReina(this)"></td>
+            <td onclick="agregarReina(this)"></td>
+            <td onclick="agregarReina(this)"></td>
+            <td onclick="agregarReina(this)"></td>
+            <td onclick="agregarReina(this)"></td>
+            <td onclick="agregarReina(this)"></td>
+        </tr>
+        <tr>
+            <td onclick="agregarReina(this)"></td>
+            <td onclick="agregarReina(this)"></td>
+            <td onclick="agregarReina(this)"></td>
+            <td onclick="agregarReina(this)"></td>
+            <td onclick="agregarReina(this)"></td>
+            <td onclick="agregarReina(this)"></td>
+            <td onclick="agregarReina(this)"></td>
+            <td onclick="agregarReina(this)"></td>
+        </tr>
+        <tr>
+            <td onclick="agregarReina(this)"></td>
+            <td onclick="agregarReina(this)"></td>
+            <td onclick="agregarReina(this)"></td>
+            <td onclick="agregarReina(this)"></td>
+            <td onclick="agregarReina(this)"></td>
+            <td onclick="agregarReina(this)"></td>
+            <td onclick="agregarReina(this)"></td>
+            <td onclick="agregarReina(this)"></td>
+        </tr>
+        <tr>
+            <td onclick="agregarReina(this)"></td>
+            <td onclick="agregarReina(this)"></td>
+            <td onclick="agregarReina(this)"></td>
+            <td onclick="agregarReina(this)"></td>
+            <td onclick="agregarReina(this)"></td>
+            <td onclick="agregarReina(this)"></td>
+            <td onclick="agregarReina(this)"></td>
+            <td onclick="agregarReina(this)"></td>
+        </tr>
+
+
+    </table>
+    <h2 id= "reinasRestantes">Reinas restantes: 8</h2>
+    <div class = "boton">
+        <button onclick="resetearTablero()">Reiniciar</button>
+    </div>
+    
+    
+</body>
+
+</html>
