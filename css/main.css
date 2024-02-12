@@ -1,0 +1,92 @@
+/* Estilo del contenedor para centrar la tabla */
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Estilos de la tabla */
+table {
+  border-collapse: collapse; 
+  border-width: 1px; 
+  border-style: solid; 
+  border-spacing: 0 50px;
+  border-color: rgb(250, 250, 250);
+  width: 500px; 
+  height: 500px; 
+} 
+
+td,
+th {
+  border-width: 1px;
+  border-style: solid;
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+
+tr:nth-child(even) td:nth-child(even),
+tr:nth-child(odd) td:nth-child(odd) {
+  background-color: #042e55;
+  /* Color para las celdas pares */
+}
+
+tr:nth-child(even) td:nth-child(odd),
+tr:nth-child(odd) td:nth-child(even) {
+  background-color: #ffffff;
+  /* Color para las celdas impares */
+}
+
+.reina-img {
+  width: 100%;
+ 
+  height: 100%;
+ 
+  position: absolute;
+  top: 50%;
+  /* Centrar verticalmente la imagen en la celda */
+  left: 50%;
+  /* Centrar horizontalmente la imagen en la celda */
+  transform: translate(-50%, -50%);
+  /* Ajustar la posición para centrar la imagen */
+}
+
+/* Estilos para el h1 */
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Estilos para el h2 */
+h2 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.boton {
+  text-align: center;
+}
+/* CSS para estilizar el menú desplegable */
+#selectorImagen {
+  padding: 8px; /* Añade relleno alrededor del menú desplegable */
+  font-size: 16px; /* Tamaño de fuente */
+  border: 1px solid #ccc; /* Borde del menú desplegable */
+  border-radius: 5px; /* Borde redondeado */
+  background-color: #fff; /* Color de fondo */
+  color: #333; /* Color del texto */
+}
+
+/* Estilo al botón */
+button {
+  padding: 8px 16px; /* Añade relleno alrededor del botón */
+  font-size: 16px; /* Tamaño de fuente */
+  border: none; /* Quita el borde del botón */
+  border-radius: 5px; /* Borde redondeado */
+  background-color: #007bff; /* Color de fondo del botón */
+  color: #fff; /* Color del texto */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+
+/* Cambia el estilo del botón al pasar por encima */
+button:hover {
+  background-color: #0056b3; /* Cambia el color de fondo al pasar por encima */
+}
+
