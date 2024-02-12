@@ -42,11 +42,9 @@ tr:nth-child(odd) td:nth-child(even) {
  
   position: absolute;
   top: 50%;
-  /* Centrar verticalmente la imagen en la celda */
   left: 50%;
-  /* Centrar horizontalmente la imagen en la celda */
   transform: translate(-50%, -50%);
-  /* Ajustar la posición para centrar la imagen */
+ 
 }
 
 /* Estilos para el h1 */
@@ -66,27 +64,27 @@ h2 {
 }
 /* CSS para estilizar el menú desplegable */
 #selectorImagen {
-  padding: 8px; /* Añade relleno alrededor del menú desplegable */
-  font-size: 16px; /* Tamaño de fuente */
-  border: 1px solid #ccc; /* Borde del menú desplegable */
-  border-radius: 5px; /* Borde redondeado */
-  background-color: #fff; /* Color de fondo */
-  color: #333; /* Color del texto */
+  padding: 8px; 
+  font-size: 16px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  background-color: #fff; 
+  color: #333; 
 }
 
 /* Estilo al botón */
 button {
-  padding: 8px 16px; /* Añade relleno alrededor del botón */
-  font-size: 16px; /* Tamaño de fuente */
-  border: none; /* Quita el borde del botón */
-  border-radius: 5px; /* Borde redondeado */
-  background-color: #007bff; /* Color de fondo del botón */
-  color: #fff; /* Color del texto */
-  cursor: pointer; /* Cambia el cursor al pasar por encima */
+  padding: 8px 16px; 
+  font-size: 16px; 
+  border: none; 
+  border-radius: 5px;
+  background-color: #007bff; 
+  color: #fff; 
+  cursor: pointer;
 }
 
 /* Cambia el estilo del botón al pasar por encima */
 button:hover {
-  background-color: #0056b3; /* Cambia el color de fondo al pasar por encima */
+  background-color: #0056b3;
 }
 
